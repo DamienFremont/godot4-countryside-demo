@@ -1,0 +1,30 @@
+[gd_scene load_steps=6 format=3 uid="uid://myh1dafmj7ca"]
+
+[ext_resource type="Script" path="res://scripts/main.cs" id="1_pjrid"]
+[ext_resource type="PackedScene" uid="uid://d2ayenw2rl2vd" path="res://assets/meshes/cube-1x1x1.gltf" id="2_ao52g"]
+[ext_resource type="PackedScene" uid="uid://d056daowjv7l5" path="res://assets/meshes/cube-16x16x16.gltf" id="3_pygci"]
+
+[sub_resource type="Sky" id="Sky_0me6q"]
+
+[sub_resource type="Environment" id="Environment_1sm2n"]
+background_mode = 2
+sky = SubResource("Sky_0me6q")
+ambient_light_source = 2
+ambient_light_color = Color(1, 1, 0.811765, 1)
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_pjrid")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_1sm2n")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.82461, 8.55173)
+
+[node name="World" type="Node3D" parent="."]
+
+[node name="cube-16x16x16" parent="World" instance=ExtResource("3_pygci")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -16, 0)
+
+[node name="cube-1x1x1" parent="World" instance=ExtResource("2_ao52g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
