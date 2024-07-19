@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bn3fq02gotj6f"]
+
+[ext_resource type="PackedScene" uid="uid://d2ayenw2rl2vd" path="res://assets/meshes/cube-1.gltf" id="1_k7pue"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a51ca"]
+albedo_color = Color(0.522655, 0.329919, 0.191366, 1)
+
+[node name="Terrain-1x1x1" type="Node3D"]
+
+[node name="cube-1" parent="." instance=ExtResource("1_k7pue")]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, -10, 0)
+
+[node name="Cube" parent="cube-1" index="0"]
+surface_material_override/0 = SubResource("StandardMaterial3D_a51ca")
+
+[editable path="cube-1"]

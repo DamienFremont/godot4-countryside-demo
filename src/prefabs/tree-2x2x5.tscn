@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7ekikwg2bynx"]
+
+[ext_resource type="PackedScene" uid="uid://d2ayenw2rl2vd" path="res://assets/meshes/cube-1.gltf" id="1_o8wi7"]
+
+[node name="Tree" type="Node3D"]
+
+[node name="cube-1" parent="." instance=ExtResource("1_o8wi7")]
+transform = Transform3D(2, 0, 0, 0, 5, 0, 0, 0, 2, 0, 5, 0)

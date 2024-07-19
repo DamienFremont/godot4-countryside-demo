@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d2ayenw2rl2vd"
-path="res://.godot/imported/cube-1x1x1.gltf-72b2ec070ae97236a7e23a0b2d8c9e6c.scn"
+uid="uid://d056daowjv7l5"
+path="res://.godot/imported/cube-16.gltf-b758c3383584b71ede1a916548170ffb.scn"
 
 [deps]
 
-source_file="res://assets/meshes/cube-1x1x1.gltf"
-dest_files=["res://.godot/imported/cube-1x1x1.gltf-72b2ec070ae97236a7e23a0b2d8c9e6c.scn"]
+source_file="res://assets/meshes/cube-16.gltf"
+dest_files=["res://.godot/imported/cube-16.gltf-b758c3383584b71ede1a916548170ffb.scn"]
 
 [params]
 
