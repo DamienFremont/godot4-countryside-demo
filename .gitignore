@@ -4,3 +4,11 @@ android/
 
 # Blender
 **/*.blend1
+
+# Node
+node_modules
+package-lock.json
+package.json
+
+# VS
+.vs

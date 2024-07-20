@@ -1,0 +1,26 @@
+# EditorConfig helps developers define and maintain consistent
+# coding styles between different editors and IDEs
+# editorconfig.org
+
+root = true
+
+# All files
+[*]
+indent_style = space
+indent_size = 2
+
+[*.{diff,md}]
+trim_trailing_whitespace = false
+insert_final_newline = false
+
+# Code files
+
+# https://google.github.io/styleguide/csharp-style.html
+[*.cs]
+# https://learn.microsoft.com/en-us/previous-versions/visualstudio/visual-studio-2017/ide/create-portable-custom-editor-options?view=vs-2017
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+# https://learn.microsoft.com/en-us/dotnet/fundamentals/code-analysis/code-style-rule-options
+csharp_new_line_before_open_brace = none

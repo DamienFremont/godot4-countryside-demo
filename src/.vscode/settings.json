@@ -1,0 +1,11 @@
+{
+  "editor.formatOnSave": true,
+  "omnisharp.enableEditorConfigSupport": false,
+  "files.exclude": {
+    "**/obj": true,
+    "**/bin": true
+  },
+  "editor.codeLens": false,
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "dotnet.codeLens.enableTestsCodeLens": false
+}
